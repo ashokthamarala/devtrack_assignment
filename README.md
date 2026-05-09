@@ -75,16 +75,16 @@ Server runs at **`http://127.0.0.1:8000/`**
 | `status` | `open` · `in_progress` · `resolved` · `closed` |
 | `priority` | `low` · `medium` · `high` · `critical` |
 
-**201 Created** (critical issue includes `message` from `CriticalIssue.describe()`):
+**201 Created** — response body is the saved issue (same shape for every priority):
 ```json
 {
   "id": 1,
-    "title": "Login Bug",
-    "description": "Fix login issue",
-    "status": "open",
-    "priority": "critical",
-    "reporter_id": 1,
-    "created_at": "2026-05-09 23:01:09.704964"
+  "title": "Login Bug",
+  "description": "Fix login issue",
+  "status": "open",
+  "priority": "critical",
+  "reporter_id": 1,
+  "created_at": "2026-05-09 23:01:09.704964"
 }
 ```
 
