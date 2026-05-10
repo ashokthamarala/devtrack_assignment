@@ -60,8 +60,8 @@ Server runs at **`http://127.0.0.1:8000/`**
 ```json
 {
   "id": 1,
-  "title": "Login Bug",
-  "description": "Fix login issue",
+  "title": "Login Button not working on mobile",
+  "description": "Users on iOS 17 cannot tap the login button",
   "status": "open",
   "priority": "critical",
   "reporter_id": 1
@@ -79,12 +79,12 @@ Server runs at **`http://127.0.0.1:8000/`**
 ```json
 {
   "id": 1,
-  "title": "Login Bug",
-  "description": "Fix login issue",
+  "title": "Login Button not working on mobile",
+  "description": "Users on iOS 17 cannot tap the login button",
   "status": "open",
   "priority": "critical",
   "reporter_id": 1,
-  "created_at": "2026-05-09 23:01:09.704964"
+  "message":"[URGENT] Login button not working on mobile - needs immediate attention"
 }
 ```
 

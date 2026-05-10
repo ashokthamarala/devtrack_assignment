@@ -150,7 +150,9 @@ def _create_issue(request):
             {"error": f"Issue with id {issue.id} already exists"}, status=400
         )
 
-    payload = issue.to_dict()
-    issues.append(payload)
+    response_data = issue.to_dict()
+    response_data["message"] = issue.describe()
+
+    issues.append(issue.to_dict())
     storage.save(ISSUES_FILE, issues)
-    return JsonResponse(payload, status=201)
+    return JsonResponse(response_data, status=201)
